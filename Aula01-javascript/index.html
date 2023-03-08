@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aula 01</title>
-</head>
-<body>
-    <h1>Olá Mundo</h1>
-    <script>    
-    // código java scrito - comentário em uma linha
-    console.log("Olá Mundo!");
-    
-    window.alert('Olá Mundo');
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <script>
+      // código java scrito - comentário em uma linha
+      console.log("Olá Mundo!");
+      window.alert("Olá Mundo");
 
+      function rosa() { // forma de escrever o código - sintaxe -> padrão
+        document.getElementById("topo").style.background = "#ff00ff";
+      }
 
-
+      function lilas() {
+        document.getElementById("centro").style.background = "#baa7e7";
+      }
     </script>
 
     <div id="topo"></div>
-
     <div id="centro"></div>
-
-    <div id="rodape"></div>
-
-</body>
+    <div id="rodape">
+      <a href="#" onmouseover="rosa()"><img src="img/btn1.jpg" /></a>
+      <a href="#" onclick="lilas()"><img src="img/btn2.jpg" /></a>
+      <a href="#" onclick="cinza()"><img src="img/btn3.jpg" /></a>
+    </div>
+  </body>
 </html>

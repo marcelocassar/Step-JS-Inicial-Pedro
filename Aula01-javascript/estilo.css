@@ -16,5 +16,14 @@
 }
 
 #rodape{
-    
+    height: 20vh;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#rodape a {
+    margin-right: 10px;
 }
